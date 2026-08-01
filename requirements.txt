@@ -1,0 +1,5 @@
+pyspark==3.5.1
+delta-spark==3.2.0
+pytest==8.2.0
+chispa==0.10.1
+ruff==0.5.0
