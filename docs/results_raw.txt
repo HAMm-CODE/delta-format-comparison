@@ -1,0 +1,13 @@
+:: loading settings :: url = jar:file:/home/vscode/.local/lib/python3.11/site-packages/pyspark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+baseline rows      : 198,082
+appended per batch : 125
+expected final rows: 198,332
+expected columns   : 11
+
+format   merge        rows  cols  size MB  Temperature_F Start_Time drift rejected
+----------------------------------------------------------------------------------
+csv      False     198,332     8    25.48  string        string     no            
+parquet  False     198,332     9     4.62  None          timestamp  no            
+parquet  True      198,332    11     4.62  double        timestamp  no            
+delta    False     198,207     8     4.61  double        timestamp  YES           
+delta    True      198,332    11     4.63  double        timestamp  no            
