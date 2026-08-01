@@ -13,7 +13,6 @@ until VACUUM removes files past the retention window.
 
 from delta.tables import DeltaTable
 from pyspark.sql import DataFrame, SparkSession
-from pyspark.sql import functions as F
 
 
 def upsert(spark: SparkSession, path: str, updates: DataFrame, key: str = "ID") -> None:

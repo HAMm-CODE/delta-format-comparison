@@ -34,7 +34,7 @@ def main() -> None:
     print(f"baseline rows      : {ROWS:,}")
     print(f"appended per batch : {same_schema.count()}")
     print(f"expected final rows: {expected_rows:,}")
-    print(f"expected columns   : 11\n")
+    print("expected columns   : 11\n")
 
     runs = [
         ("csv", False),
